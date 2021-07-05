@@ -6,3 +6,8 @@
 - python manage.py startapp accountapp 로 accountapp 추가 settin.py에도 추가
 - urls.py 추가 (main urls에 path 추가)
 - view httpRespose로 반응 확인
+
+####20210705 오후
+- delete __pycache__ 
+- extends & include로 UI 구조 설계
+
