@@ -14,3 +14,5 @@
 ####20210720 
 - bootstrap
 - account 관련 모두 커밋
+1. Authentication 진행
+- account를 update, delete 같은 경우 파라메터로 접근 타인 것을 지우는 것이 가능해서 로그인했을때만 할 수 있게끔 진행
