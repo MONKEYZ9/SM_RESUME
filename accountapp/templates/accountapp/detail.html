@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="text-center mw-500 m-auto">
+        <div class="m-5">
+            <h4>{{ target_user.username }}</h4>
+        </div>
+        <div>
+            <h2>
+                {{ target_user.date_joined }}
+            </h2>
+            {% if user == target_user  %}
+                <a href="{% url 'accountapp:update' pk=target_user.pk %}">
+                    <p>
+                        Change Info
+                    </p>
+                </a>
+                 <a href="{% url 'accountapp:delete' pk=target_user.pk %}">
+                    <p>
+                        Quit Info
+                    </p>
+                </a>
+            {% endif  %}
+        </div>
+    </div>
+
+{% endblock %}

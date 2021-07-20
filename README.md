@@ -11,3 +11,6 @@
 - delete __pycache__ 
 - extends & include로 UI 구조 설계
 
+####20210720 
+- bootstrap
+- account 관련 모두 커밋
