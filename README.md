@@ -17,3 +17,9 @@
 1. Authentication 진행
 - account를 update, delete 같은 경우 파라메터로 접근 타인 것을 지우는 것이 가능해서 로그인했을때만 할 수 있게끔 진행
 - 타 유저의 정보를 업데이트 삭제 방지
+
+####20210722
+1. decorator 적용
+- @method_decorator, @login_required
+- login_required가 해당 경로가 장고가 원하는 대로 되어있음 이걸 수정해야함 => login_url=reverse_lazy('accountapp:login'))
+   
