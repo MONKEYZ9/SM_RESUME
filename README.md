@@ -30,3 +30,4 @@
 
 3. profileapp 생성
 - 회원의 media를 적용 - setting.py에 추가
+- profileapp 생성, urls, settings 파일에 경로 추가, profileapp 내 urls 생성
