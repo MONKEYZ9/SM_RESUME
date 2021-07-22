@@ -22,4 +22,11 @@
 1. decorator 적용
 - @method_decorator로 login_required 를 불러와서 get, post 다 적용해야함
 - login_required가 해당 경로가 장고가 원하는 대로 되어있음 이걸 수정해야함 => login_url=reverse_lazy('accountapp:login'))
-   
+- decorator.py 생성하고 이걸 다시 정리해줬음
+- has_ownership
+
+2. 관리자 생성
+- python manage.py createsuperuser
+
+3. profileapp 생성
+- 회원의 media를 적용 - setting.py에 추가
