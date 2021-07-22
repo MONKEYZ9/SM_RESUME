@@ -20,6 +20,6 @@
 
 ####20210722
 1. decorator 적용
-- @method_decorator, @login_required
+- @method_decorator로 login_required 를 불러와서 get, post 다 적용해야함
 - login_required가 해당 경로가 장고가 원하는 대로 되어있음 이걸 수정해야함 => login_url=reverse_lazy('accountapp:login'))
    
