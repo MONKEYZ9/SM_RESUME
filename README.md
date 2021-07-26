@@ -31,3 +31,7 @@
 3. profileapp 생성
 - 회원의 media를 적용 - setting.py에 추가
 - profileapp 생성, urls, settings 파일에 경로 추가, profileapp 내 urls 생성
+
+##20210726
+1. profileapp 설정
+- model 설정 -> migration만들자 -> pillow가 없어서 설치 안됨(pip install pillow) -> python manage.py makemigrations, python manage.py migrate
