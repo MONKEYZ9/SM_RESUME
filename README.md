@@ -39,3 +39,4 @@
 2. forms.py 설정
 
 3. views, urls 설정
+ - create.html에서 form으로 파일을 담아서 전송할때는 enctype을 사용해야 한다.
