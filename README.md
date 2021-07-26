@@ -37,3 +37,5 @@
 - model 설정 -> migration만들자 -> pillow가 없어서 설치 안됨(pip install pillow) -> python manage.py makemigrations, python manage.py migrate
 
 2. forms.py 설정
+
+3. views, urls 설정
