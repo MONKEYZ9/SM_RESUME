@@ -43,3 +43,7 @@
 
 ##20210727
 1. Profile views.py에 form_valid를 추가
+
+2. profile info 업데이트
+- detail.html에 profile info가 나오게끔 수정
+- urls.py에  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)를 추가
