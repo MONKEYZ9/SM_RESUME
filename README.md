@@ -48,3 +48,8 @@
 - detail.html에 profile info가 나오게끔 수정
 - urls.py에  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)를 추가
 - account detail.html, css 추가
+
+3. profile updateview 추가
+- views.py에 updateview 추가
+- urls.py에 path 추가
+- accountapp detail에 a tag 추가
