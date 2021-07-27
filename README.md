@@ -40,3 +40,6 @@
 
 3. views, urls 설정
  - create.html에서 form으로 파일을 담아서 전송할때는 enctype을 사용해야 한다.
+
+##20210727
+1. Profile views.py에 form_valid를 추가
