@@ -57,3 +57,8 @@
 ##0729
 1. profile 로그인해야 볼 수 있게끔
 - decorator 추가
+
+2. profile update redirect 페이지 수정
+- success_url = reverse_lazy('accountapp:hello world') 수정
+- profile views.py에 get_success_url 추가
+- accountapp views.py에 get_success_url 추가
