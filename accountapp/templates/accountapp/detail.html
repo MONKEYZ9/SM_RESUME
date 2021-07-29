@@ -10,9 +10,12 @@
                      alt="profile image">
                 <h2 class="NNS_B">{{ target_user.profile.nickname }}
                     <br>
-                    <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
-                        Profile edit
-                    </a>
+                    {% if user == target_user %}
+                        <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
+                            Profile edit
+                        </a>
+                        </h2>
+                    {% endif %}
                 </h2>
                 <h5>{{ target_user.profile.message }}</h5>
             {% else %}

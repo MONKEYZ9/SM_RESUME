@@ -53,3 +53,7 @@
 - views.py에 updateview 추가
 - urls.py에 path 추가
 - accountapp detail에 a tag 추가
+
+##0729
+1. profile 로그인해야 볼 수 있게끔
+- decorator 추가
