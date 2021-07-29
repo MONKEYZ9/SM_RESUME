@@ -64,3 +64,6 @@
 - accountapp views.py에 get_success_url 추가
 
 3. accountapp update 단어를 구글 아이콘으로 수정하기
+
+4. account detail.html 수정
+- update, delete icons 추가
