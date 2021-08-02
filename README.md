@@ -67,3 +67,10 @@
 
 4. account detail.html 수정
 - update, delete icons 추가
+
+##0802
+1. articleapp 추가
+- python manage.py startapp articleapp
+- main의 setting, urls 조정
+
+1. Magic Grid 추가
