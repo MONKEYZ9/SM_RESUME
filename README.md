@@ -81,3 +81,6 @@
 3. lorem picsum 추가
 - https://picsum.photos/
 - magicgrid.js 사진 순서대로 불러오는 거 해줌
+
+4. article Model구축
+- model.py 수정, python manage.py makemigrations, python manage.py migrate
