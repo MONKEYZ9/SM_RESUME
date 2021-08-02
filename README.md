@@ -73,4 +73,10 @@
 - python manage.py startapp articleapp
 - main의 setting, urls 조정
 
-1. Magic Grid 추가
+2. Magic Grid 추가
+- https://jsfiddle.net/eolaojo/4pov0rdf/
+- https://github.com/e-oj/Magic-Grid/blob/master/dist/magic-grid.cjs.js
+- list.html 수정
+
+3. lorem picsum 추가
+- https://picsum.photos/
