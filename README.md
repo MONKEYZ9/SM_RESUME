@@ -97,3 +97,10 @@
 - articleapp view에 detailview 추가
 - urls에 path 추가
 - detail.html 추가
+
+3. Article update 
+- articleapp view에 updateview 추가
+- urls에 path 추가
+- update.html 추가 create.html과 같아
+
+4. Article detail.html 버튼 추가
