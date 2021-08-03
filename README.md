@@ -75,7 +75,8 @@
 
 2. Magic Grid 추가
 - https://jsfiddle.net/eolaojo/4pov0rdf/
-- https://github.com/e-oj/Magic-Grid/blob/master/dist/magic-grid.cjs.js
+- https://github.com/e-oj/Magic-Grid/tree/master/dist
+- magic-grid.cjs.js 를 사용하자
 - list.html 수정
 
 3. lorem picsum 추가
@@ -84,3 +85,10 @@
 
 4. article Model구축
 - model.py 수정, python manage.py makemigrations, python manage.py migrate
+
+##0803
+1. Article create 만들기
+- articleapp view에 createview 추가
+- urls에 path 추가
+- create.html 추가
+- view에 form_valid 추가
