@@ -91,4 +91,9 @@
 - articleapp view에 createview 추가
 - urls에 path 추가
 - create.html 추가
-- view에 form_valid 추가
+- view에 form_valid 추
+
+2. Article detail 
+- articleapp view에 detailview 추가
+- urls에 path 추가
+- detail.html 추가
