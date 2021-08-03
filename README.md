@@ -104,3 +104,8 @@
 - update.html 추가 create.html과 같아
 
 4. Article detail.html 버튼 추가
+
+5.  Article delete 
+- articleapp view에 deleteview 추가
+- urls에 path 추가
+- delete.html 추가
