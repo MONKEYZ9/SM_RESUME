@@ -119,3 +119,8 @@
 2. Article detail.html 수정
 - detail.html 수정
 - base.css  추가
+
+3. Article list 수정
+- view.py에 ArticleListView 추가
+- urls.py path 수정
+- list.html 수정
