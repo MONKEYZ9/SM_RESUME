@@ -125,3 +125,5 @@
 - urls.py path 수정
 - list.html 수정
 - create button 추가
+- pagination 추가
+- include로 pagination.html 불러오기
