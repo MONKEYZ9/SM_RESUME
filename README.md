@@ -109,3 +109,9 @@
 - articleapp view에 deleteview 추가
 - urls에 path 추가
 - delete.html 추가
+
+##0805
+1. articlesapp decorator.py 추가
+- 로그인 확인
+- 해당 유저인지 아닌지 확인하는 거
+- createview 에서는 successurl 추가 
