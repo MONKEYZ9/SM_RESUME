@@ -127,3 +127,8 @@
 - create button 추가
 - pagination 추가
 - include로 pagination.html 불러오기
+
+##0809
+1. CommentApp(댓글)
+- python manage.py startapp commentapp
+- setting.py, urls.py 설정하고 urls.py 추가
