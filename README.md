@@ -138,3 +138,9 @@
 - views.py에 CommentCreateView 추가
 - urls.py에 urlspattern 추가
 - templates/commentapp create.html 추가
+- articleapp view.py에 ArticleDetailView에 FormMixin 추가
+- detail.html에 {% include 'commentapp/create.html' %} 추가
+- create.html에 url 이름 수정, extends 및 blocks 해제, target_article.pk 값 전송을 위해 input hidden 타입 추가
+- commentapp view.py에 form_valid 추가, article_pk를 input name 전송
+
+
