@@ -132,4 +132,9 @@
 1. CommentApp(댓글)
 - python manage.py startapp commentapp
 - setting.py, urls.py 설정하고 urls.py 추가
-- Model 구축, models.py, forms.py 
+- Model 구축, models.py, forms.py
+
+2. comment create 구축
+- views.py에 CommentCreateView 추가
+- urls.py에 urlspattern 추가
+- templates/commentapp create.html 추가
