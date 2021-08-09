@@ -143,4 +143,5 @@
 - create.html에 url 이름 수정, extends 및 blocks 해제, target_article.pk 값 전송을 위해 input hidden 타입 추가
 - commentapp view.py에 form_valid 추가, article_pk를 input name 전송
 
-
+3. comment Delete 추가
+- delete.html 추가, urls.py path 추가, view.py view 추가
