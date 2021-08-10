@@ -150,6 +150,8 @@
 ##0810
 1. 댓글 시각화
 -  detail.html 수정
+    - comment 삭제 버튼 추가
+    - 로그인 확인
 - CommentCreateView 로그인 확인
 - CommentDeleteView 작성자 확인
 - decorated.py 추가
