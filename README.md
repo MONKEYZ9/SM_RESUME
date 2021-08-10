@@ -145,3 +145,11 @@
 
 3. comment Delete 추가
 - delete.html 추가, urls.py path 추가, view.py view 추가
+
+
+##0810
+1. 댓글 시각화
+-  detail.html 수정
+- CommentCreateView 로그인 확인
+- CommentDeleteView 작성자 확인
+- decorated.py 추가
