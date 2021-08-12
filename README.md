@@ -168,3 +168,7 @@
 - 가운데 정렬을 위한 Magic grid 수정 gutter 값 수정
 - detail.html css 수정
 - @media screen and (max-width: 500px) 를 추가적으로 수정함으로 반응형으로
+
+2. projectapp 생성
+- python manage.py startapp projectapp
+- setting.py, urls.py 추가
