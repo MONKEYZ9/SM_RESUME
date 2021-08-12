@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, DetailView
 
 from projectapp.forms import ProjectCreationForm
@@ -11,9 +11,10 @@ from projectapp.models import Project
 class ProjectCreateView(CreateView):
     model = Project
     form_class = ProjectCreationForm
-    success_url = reverse_lazy('articleapp:list')
     template_name = 'projectapp/create.html'
 
+    def get_success_url(self):
+        return reverse('projectapp:detail', kwargs={'pk' : self.object.pk})
 
 class ProjectDetailView(DetailView):
     model = Project
