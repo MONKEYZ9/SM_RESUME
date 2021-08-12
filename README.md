@@ -176,3 +176,7 @@
  - forms.py 생성
  - python manage.py makemigrations
  - python manage.py migrate
+- View 생성
+ - views.py createview 생성
+ - urls.py path 추가
+ - templates/projectsapp create.html 생성
