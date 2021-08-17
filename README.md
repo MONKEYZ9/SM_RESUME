@@ -183,3 +183,7 @@
 - Detail  추가
  - detail.html, urls.py, views.py 수정
 - createview success_url 수정
+
+##0817
+1. Project List 생성
+- ariticles의 list.html을 참고해서 list.html 생성
