@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 # Create your views here.
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DeleteView
 
@@ -10,8 +10,8 @@ from commentapp.decorators import comment_ownership_required
 from commentapp.forms import CommentCreationForm
 from commentapp.models import Comment
 
-@method_decorator(login_required, 'get') # get은 들어가면 안된다.
-@method_decorator(login_required, 'post')
+@method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'get') # get은 들어가면 안된다.
+@method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'post')
 class CommentCreateView(CreateView):
     model = Comment
     form_class = CommentCreationForm

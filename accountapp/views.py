@@ -45,7 +45,7 @@ class AccountDetailView(DetailView):
     template_name = 'accountapp/detail.html'
 
 
-has_ownership = [login_required, account_ownership_required]
+has_ownership = [login_required(login_url=reverse_lazy('accountapp:login')), account_ownership_required]
 
 
 # 회원정보 업데이트
