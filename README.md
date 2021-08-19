@@ -196,3 +196,6 @@
 - articleapp Model에 project 필드를 추가
 - 바뀐 거 적용해주자 python manage.py makemigrations python manage.py migrate
 - forms.py에도 필드에 추가해주자
+
+2. 내 프로필에서 확인하기
+- list_fragement.html을 추가

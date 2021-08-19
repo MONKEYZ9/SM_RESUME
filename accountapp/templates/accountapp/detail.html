@@ -8,7 +8,8 @@
                 <img src="{{ target_user.profile.image.url }}"
                      class="profile_image m-4"
                      alt="profile image">
-                <h2 class="NNS_B">{{ target_user.profile.nickname }}
+                <h2 class="NNS_B">
+                    {{ target_user.profile.nickname }}
                     {% if user == target_user %}
                         <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}"
                            class="material-icons round_button md-24">
@@ -26,7 +27,6 @@
                 </h2>
             {% endif %}
 
-            <h4>{{ target_user.username }}</h4>
         </div>
         <div>
             {% if user == target_user %}
@@ -40,6 +40,10 @@
                 </a>
             {% endif %}
         </div>
+    </div>
+
+    <div>
+        {% include 'snippets/list_fragement.html' with article_list=object_list %}
     </div>
 
 {% endblock %}

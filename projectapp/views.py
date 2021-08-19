@@ -5,9 +5,12 @@ from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DetailView, ListView
+from django.views.generic.list import MultipleObjectMixin
 
+from articleapp.models import Article
 from projectapp.forms import ProjectCreationForm
 from projectapp.models import Project
+
 
 @method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'get')
 @method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'post')
@@ -17,12 +20,19 @@ class ProjectCreateView(CreateView):
     template_name = 'projectapp/create.html'
 
     def get_success_url(self):
-        return reverse('projectapp:detail', kwargs={'pk' : self.object.pk})
+        return reverse('projectapp:detail', kwargs={'pk': self.object.pk})
 
-class ProjectDetailView(DetailView):
+
+class ProjectDetailView(DetailView, MultipleObjectMixin):
     model = Project
     context_object_name = 'target_project'
     template_name = 'projectapp/detail.html'
+    paginate_by = 20
+
+    def get_context_data(self, **kwargs):
+        article_list = Article.objects.filter(project=self.object)
+        return super().get_context_data(object_list=article_list, **kwargs)
+
 
 class ProjectListView(ListView):
     model = Project
