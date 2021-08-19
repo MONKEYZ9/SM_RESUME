@@ -199,3 +199,8 @@
 
 2. 내 프로필에서 확인하기
 - list_fragement.html을 추가
+
+3. 구독을 할 수 있는 subscribeapp
+- python manage.py startapp subscribeapp, urls, setting 수정
+- Model 구축, Meta 클래스를 이용해서 구독은 한번만 하게끔
+- python manage.py makemigrations python manage.py migrate
