@@ -7,3 +7,6 @@ class Project(models.Model):
     decription = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='project/', null=False)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.name}'
