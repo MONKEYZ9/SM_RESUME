@@ -12,6 +12,7 @@
         </div>
         <div>
             {# 게시글 대표 이미지, 개시글 내용 #}
+            {#  alt=""는 기본 이미지인데 그냥 내비둔다. #}
             <img src="{{ target_article.image.url }}"
                  class="article_image"
                  alt="">
@@ -32,6 +33,7 @@
                 </a>
             </div>
         {% endif %}
+
         <hr>
 
         <div class="text-center mx-4">
@@ -68,6 +70,8 @@
 
             {% include 'commentapp/create.html' %}
         </div>
+
+
     </div>
 
 {% endblock %}
