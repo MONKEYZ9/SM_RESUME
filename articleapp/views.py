@@ -59,4 +59,4 @@ class ArticleListView(ListView):
     context_object_name = 'article_list'
     template_name = 'articleapp/list.html'
     # 몇개의 페이지로 해줄지
-    paginate_by = 2
+    paginate_by = 20
