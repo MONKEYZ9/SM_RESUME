@@ -14,7 +14,6 @@
         </div>
     </div>
 
-    {#  구독 버튼 공간  #}
     {% if user.is_authenticated %}
         <div class="text-center">
             {% if not subscription %}
@@ -31,8 +30,10 @@
         </div>
     {% endif %}
 
+
     <div>
-        {% include 'snippets/list_fragment.html' %}
+        {% include 'snippets/list_fragement.html' with article_list=object_list %}
     </div>
+
 
 {% endblock %}
