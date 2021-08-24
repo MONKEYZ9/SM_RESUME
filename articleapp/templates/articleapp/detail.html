@@ -10,6 +10,16 @@
             <h3>{{ target_article.writer.profile.nickname }}</h3>
             <p>{{ target_article.create_at }}</p>
         </div>
+        {# 좋아요 버튼 #}
+        <div>
+            <a href="{% url 'likeapp:article_like' article_pk=target_article.pk %}"
+               class="material-icons">
+                favorite
+            </a>
+            <span>
+                {{ target_article.like }}
+            </span>
+        </div>
         <div>
             {# 게시글 대표 이미지, 개시글 내용 #}
             {#  alt=""는 기본 이미지인데 그냥 내비둔다. #}
