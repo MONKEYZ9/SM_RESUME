@@ -14,3 +14,5 @@ class Article(models.Model):
     image = models.ImageField(upload_to='article/', null=True)
     content = models.TextField(null=True)
     create_at = models.DateField(auto_now_add=True)
+    # 좋아요 숫자
+    like = models.IntegerField(default=0)
