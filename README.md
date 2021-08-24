@@ -244,3 +244,7 @@
   -> view에서 좋아요가 눌렸는지 확인하고 안눌렸다면 추가하고 눌렸다면 리다이렉해주게끔
   -> 리다이렉할때 어디로 갈지도 추가
 - articleapp detail.html 좋아요 추가
+
+1-4
+- css 수정 
+  ->base.css, article detail.html
