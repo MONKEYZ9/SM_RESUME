@@ -40,7 +40,7 @@ SECRET_KEY = env_list['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '*' # 일단은 모든 ip가 가능하게
+    '*'  # 일단은 모든 ip가 가능하게
 ]
 # Application definition
 
@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'commentapp',
     'projectapp',
     'subscribeapp',
+    'likeapp',
 ]
 
 MIDDLEWARE = [
