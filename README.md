@@ -255,3 +255,4 @@
 -> def add_message(request: {_messages}, level: Any, message: Any, extra_tags: str = '', fail_silently: bool = False) -> Any
 -> 위를 사용해서 view.py 수정
 -> 해당 메세지를 base.html에서 메세지를 출력할 수 있게끔 해주자
+    -> message framework에서 message tag를 수정해서 색색별로 달라지게끔 해주자
