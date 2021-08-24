@@ -7,6 +7,16 @@
 
 <hr>
 
+{% for message in messages %}
+    <div class="text-center">
+        <div class="">
+            {{ message }}
+        </div>
+    </div>
+{% endfor %}
+
+
+
 {% block content %}
 {% endblock %}
 
