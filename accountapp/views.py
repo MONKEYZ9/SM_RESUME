@@ -17,26 +17,12 @@ from accountapp.models import HelloWorld
 from articleapp.models import Article
 
 
-@login_required(login_url=reverse_lazy('accountapp:login'))
-def hello_world(req):
-    if req.method == 'POST':
-        temp = req.POST.get("input_text")
-        new_hello_world = HelloWorld()
-        new_hello_world.text = temp
-        new_hello_world.save()
-
-        return HttpResponseRedirect(reverse('accountapp:hello world'))
-
-    else:
-        new_hello_world_list = HelloWorld.objects.all()
-        return render(req, 'accountapp/hello_world.html',
-                      context={'new_hello_world_list': new_hello_world_list})
 
 
 class AccountCreateView(CreateView):
     model = User
     form_class = UserCreationForm
-    success_url = reverse_lazy('accountapp:hello world')
+    success_url = reverse_lazy('accountapp:login')
     template_name = 'accountapp/create.html'
 
 
