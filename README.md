@@ -271,3 +271,4 @@
  - article create 디자인 수정
  
  - beagle 테마 적용해주기
+ - update 페이지에도 적용하기
