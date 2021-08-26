@@ -10,18 +10,18 @@
             <h3>{{ target_article.writer.profile.nickname }}</h3>
             <p>{{ target_article.create_at }}</p>
         </div>
-            {# 좋아요 버튼 #}
+        {# 좋아요 버튼 #}
         <div>
             <a href="{% url 'likeapp:article_like' article_pk=target_article.pk %}"
-                class="material-icons"
-                style="vertical-align: middle; font-size: 1.2rem; color: indianred;">
+               class="material-icons"
+               style="vertical-align: middle; font-size: 1.2rem; color: indianred;">
                 favorite
             </a>
             <span style="vertical-align: middle;">
                 {{ target_article.like }}
             </span>
         </div>
-    <hr>
+        <hr>
         <div class="my-5">
             {# 게시글 대표 이미지, 개시글 내용 #}
             {#  alt=""는 기본 이미지인데 그냥 내비둔다. #}
@@ -29,7 +29,8 @@
                  class="article_image"
                  alt="">
             <div class="article_content my-5">
-                {{ target_article.content }}
+                {# | safe를 사용함으로 태그를 보호해준다는 거야 #}
+                {{ target_article.content | safe }}
             </div>
         </div>
 
