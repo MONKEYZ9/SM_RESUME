@@ -15,18 +15,16 @@ from likeapp.models import LikeRecord
 
 
 @transaction.atomic
-def db_transcation(user, article):
+def db_transaction(user, article):
     article.like += 1
     article.save()
 
     like_record = LikeRecord.objects.filter(user=user,
                                             article=article)
-    # 좋아요가 눌러져있다면
     if like_record.exists():
-        raise ValidationError('like already exist.')
-
-    # 좋아요 누르고 db에 바로 저장
-    LikeRecord(user=user, article=article).save()
+        raise ValidationError('like already exists.')
+    else:
+        LikeRecord(user=user, article=article).save()
 
 
 @method_decorator(login_required, 'get')
@@ -36,15 +34,16 @@ class LikeArticleView(RedirectView):
         article = Article.objects.get(pk=kwargs['article_pk'])
 
         try:
-            db_transcation(user, article)
-            messages.add_message(request, messages.ERROR, '이미 눌려있습니다.')
+            db_transaction(user, article)
+            # 좋아요 반영 O
+            messages.add_message(request, messages.SUCCESS, '좋아요가 반영되었습니다.')
         except ValidationError:
-            messages.add_message(request, messages.SUCCESS, '좋아요!')
+            # 좋아요 반영 X
+            messages.add_message(request, messages.ERROR, '좋아요는 한번만 가능합니다.')
             return HttpResponseRedirect(reverse('articleapp:detail',
                                                 kwargs={'pk': kwargs['article_pk']}))
 
         return super().get(request, *args, **kwargs)
 
-    # 리다이렉 할때 어디로 갈지
     def get_redirect_url(self, *args, **kwargs):
         return reverse('articleapp:detail', kwargs={'pk': kwargs['article_pk']})
