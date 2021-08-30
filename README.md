@@ -272,3 +272,14 @@
  
  - beagle 테마 적용해주기
  - update 페이지에도 적용하기
+
+
+##0830
+1. 메뉴 버튼 수정 
+   -> header.html span mx-2 추가
+2. 홈페이지 설정 
+   -> url.py에 path 추가, setting.py에서 로그인하거나 로그아웃했을때 라우팅 해주는거 바꿔줌
+3. 홈으로 가는 설정 
+   -> head.html 제목 a태그 수정
+4. article 작성할때 project 설정을 안하면 작성이 안되는 문제 해결 
+   -> articleapp model.py 수정
