@@ -152,6 +152,6 @@ cython_debug/
 
 smsm
 smsm.pub
-
+Dockerfile
 
 # End of https://www.toptal.com/developers/gitignore/api/django
